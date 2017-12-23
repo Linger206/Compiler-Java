@@ -1,0 +1,52 @@
+ROT IS 0;
+ORIGIN IS (100,500);
+SCALE IS (2,1);
+FOR T FROM 0 TO 400 STEP 1 DRAW(T,0);	//横坐标
+FOR T FROM 0 TO 400 STEP 1 DRAW(0,-T);	--纵坐标
+
+SCALE IS (1,1);
+FOR T FROM 0 TO 300 STEP 1 DRAW(T,-T);
+
+SCALE IS (20,0.1);
+FOR T FROM 0 TO 50 STEP 0.1 DRAW(T,-EXP(T));	//e^T
+
+SCALE IS (2,0.1);
+FOR T FROM 0 TO 100 STEP 1 DRAW(T,-(T**2));	--T^2
+
+SCALE IS (10,10);
+FOR T FROM 0 TO 60 STEP 1 DRAW(T,-SQRT(T));	//sqrt(T)
+
+SCALE IS (20,40);
+FOR T FROM 0 TO 30 STEP 0.1 DRAW(T,-SIN(T));	--sin(T)
+
+origin is (100,500);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+
+origin is (600,200);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));	//circle
+origin is (700,200);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (800,200);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (650,250);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (750,250);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (650,150);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (750,150);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (700,100);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
+origin is (700,300);
+scale is (50,50);
+for t from 0 to 100 step 1 draw(sin(t),cos(t));
